@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgApp.controller.RetirementController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgApp.controller.RetirementController">
    <bottom>
       <HBox prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </bottom>
@@ -72,7 +72,14 @@
                   <Insets />
                </GridPane.margin>
             </HBox>
-            <TextField fx:id="txtYearsToWork" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtYearsToWork" prefHeight="25.0" prefWidth="62.0" promptText="enter without a decimal" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="LabSaveEachMonth" text="Calculate Me!" GridPane.columnIndex="1" />
+            <Label fx:id="LabNeedToSave" text="Calculate Me!" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtAnnualReturnWork" promptText="e.g. if 7%, enter .07" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtYearsRetired" promptText="enter without commas" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="txtAnnualReturnRetired" promptText="e.g. if 2%, enter .02" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="txtRequiredIncome" promptText="enter without commas" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="txtMonthlySSI" promptText="enter without commas" GridPane.columnIndex="1" GridPane.rowIndex="9" />
          </children>
       </GridPane>
    </center>
